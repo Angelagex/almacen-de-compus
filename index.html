@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacén de Computadores S.M.A.R.T.</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logodiv">
+            <img id="logo" src="imagenes/logo Smart.png" alt="LOGO">
+        </div>
+        <nav id="head">
+            <label for="head">
+                <ul id="headi">
+                    <li id="jome"><a href="#home">HOME</a></li>
+                    <li id="buy"><a onclick="comprashow()" href="#compra">COMPRA</a></li>
+                </ul>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div id="toptop">
+                <div id="toptop2">
+                <h1 class="top">Promoción en computadores</h1>
+                <hr>
+                <p class="top">Escoge tu computador favorito por tan solo $820.000</p>
+                </div>
+            </div>
+            <table id="cont">
+                <tr>
+                    <td><img src="imagenes/computador1.jpg" alt=""><a onclick="comprashow()" href="#compra">Computador Portatil HP 15,6"
+                            Pulgadas 15-gw0030la AMD3020e- 4 GB RAM- Disco Estado Sólido 256 GB-Gris Pizarra</a></td>
+                    <td><img src="imagenes/computador2.jpg" alt=""><a onclick="comprashow()" href="#compra">Portátil LENOVO IdeaPad 3 AMD
+                            Athlon Silver RAM 8 GB x14" Pulgadas Disco Sólido 256 GB Plateado</a></td>
+                    <td><img src="imagenes/computador3.jpg" alt=""><a onclick="comprashow()" href="#compra">Computador Portátil ASUS
+                            VivoBook 14" Pulgadas X413EA-EB660T Intel Core i3 - 4GB RAM - Disco Estado Sólido 128 GB -
+                            Azul</a></td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/computador4.jpg" alt=""><a onclick="comprashow()" href="#compra">Computador Portátil ACER 15.6"
+                            Pulgadas A315-57G-53PW Intel Core i5 RAM 8 GB Disco Solido 256 GB - Negro</a></td>
+                    <td><img src="imagenes/computador5.jpg" alt=""><a onclick="comprashow()" href="#compra">Computador Portatil HP 15,6" Pulgadas 15-gw0003la AMD
+                        Athlon Silver- 4 GB RAM- Disco Estado Sólido 256 GB-Negro</a></td>
+                    <td><img src="imagenes/computador6.jpg" alt=""><a onclick="comprashow()" href="#compra">Computador Portátil LENOVO 14" Pulgadas IdeaPad 3
+                        Ryzen 5 - 8GB Ram - Disco Solido 256GB - Azul</a></td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/computador7.jpg" alt=""><a onclick="comprashow()" href="#compra">Computador Portátil ASUS VivoBook 14" Pulgadas
+                        X413EA-EB653T Intel Core i3 - 8GB RAM - Disco Estado Sólido 512 GB - Negro</a></td>
+                    <td><img src="imagenes/computador8.jpg" alt=""><a onclick="comprashow()" href="#compra">Computador Portatil LENOVO 13,3" Pulgadas S540 Intel
+                        Core i5 - 8GB Ram - Disco Solido 512GB - Plateado</a></td>
+                    <td><img src="imagenes/computador9.jpg" alt=""><a onclick="comprashow()" href="#compra">Computador Portátil ACER 15.6" Pulgadas A515-56G-72RX
+                        Intel Core i7 - 8GB RAM - Disco Solido 512GB SSD - Plateado</a></td>
+                </tr>
+            </table>
+            <div id="bot">
+                <p>Lleva un descuento adicional por cantidad de compra</p>
+                <p>Que esperas solo has click</p> <input  href="#compra" type="button" name="compra2" id="compra2" onclick="comprashow()" value="OBTENER PROMOCION">
+            </div>
+        </section>
+
+        <section id="compra">
+            <div id="botbot"></div>
+            <div id="botbot2">
+                <div id="promopc">
+                    <img  id="imagencompra" src="imagenes/descuento.png" alt=""><br>
+                    <p>Promo PC</p>
+                    <label id="ncomputext" for="ncompu">Cuantos portatiles necesitas?<br><input type="text" name="ncompu" id="ncompu"><br>
+                    <input id="ncompusub" name="ncompu" type="button" value="Calcular"></label>
+                </div>
+                <br>
+                <div id="valores">
+                    <label for="subtotal">Subtotal<input id="subtotal" type="text" readonly></label><br>
+                    <label for="descuento">Descuento<input id="descuento" type="text" readonly></label><br>
+                    <label for="total">Total<input id="total" type="text" readonly></label><br>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <span>
+                <p class="imp">CONTACTO</p>
+            </span>
+            <p>Cra. 14a #59-33</p>
+            <p>Bogotá - Colombia</p>
+            <p>314-4656999</p>
+        </div>
+        <div>
+            <p>Si tienes alguna queja, reclamo o sugerencia visita nuestro formulario de PQRS.</p>
+        </div>
+        <div>
+            <span>
+                <p class="imp">METODOS DE PAGO</p>
+                <img id="metodos" src="/almacen-de-comp/imagenes/metodosdepago.png" alt="logo2">
+            </span>
+            
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
